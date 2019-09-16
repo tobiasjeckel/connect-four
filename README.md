@@ -23,3 +23,8 @@ HTML, CSS, JavaScript, jQuery
 - A message appears to announce the victory of a player 
 - After the game is ended, a button appears to reset the game
 
+### Feature Backlog
+
+- Make mobile responsive
+- Visually indicate which four pieces on the board satisfied the victory condition
+
