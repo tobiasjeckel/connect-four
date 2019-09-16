@@ -4,7 +4,7 @@ My first project completed at [Spiced Academy](https://spiced.academy). A tribut
 
 ### Preview
 
-![Screenshot of Connect Four]()
+![Screenshot of Connect Four](https://github.com/tobiasjeckel/connect-four/blob/master/assets/connect-four-preview.png)
 
 ### Demo 
 
