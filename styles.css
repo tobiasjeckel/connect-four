@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+header {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 80px;
+    letter-spacing: 0.3em;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+}
+header h3 {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#left {
+    width: 250px;
+    background-image: url(assets/boy.jpg);
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#right-field {
+    width: 250px;
+    background-image: url(assets/girl.jpg);
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    background-color: #3399ff;
+    cursor: pointer;
+}
+
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    background-color: white;
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.player1 .hole {
+    background-image: url(assets/yellow.jpg);
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.player2 .hole {
+    background-image: url(assets/red.jpg);
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.player1_hover .hole {
+    background-color: #ffff9f;
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.8s ease;
+}
+
+.player2_hover .hole {
+    background-color: #ffcccc;
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.8s ease;
+}
+
+#board {
+    border: 10px solid #003399;
+    display: flex;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 3;
+    font-size: 40px;
+    transform: translateX(100%);
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal.on {
+    transition-property: all;
+    transition-duration: 1s;
+    transform: translateX(0);
+}
